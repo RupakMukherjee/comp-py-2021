@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/ python
 import numpy as np
 import math
@@ -122,3 +123,5 @@ if __name__== "__main__":
 	main()
 	end = time.time()
 	print("Elapsed (after compilation) = %s"%(end - start)+" seconds")
+
+```
