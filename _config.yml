@@ -1,1 +1,6 @@
+title: CoMP-Py 2021
+logo: 
+description: A hands-on tutorial on molecular dynamics simulation in python for beginners.
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-cayman
