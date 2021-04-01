@@ -14,7 +14,11 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 ## [MD algorithm in Python!](verlet.md)
 
-## [MD algorithm in Python with Numba!](verlet_numba.md)
+## [MD algorithm in Python using Numba!](verlet_numba.md)
+
+## [MD algorithm in Python using Numba on multiple processers!](verlet_numba_parallel.md)
+
+## [MD Animation with Matplotlib!](verlet_animate.md)
 
 <br/>
 
