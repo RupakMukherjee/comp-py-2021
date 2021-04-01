@@ -2,9 +2,9 @@
 import numpy as np
 import random
 import time
-from numba import jit
+from numba import jit, prange
 
-@jit(nopython=True)
+@jit(nopython=True, parallel=True)
 def main():
     #========== Input Parameters ===========
 
@@ -82,7 +82,7 @@ def main():
 
     for t in range(len(time)):
         KE = 0.0   # Reset KE
-        for i in range(N):
+        for i in prange(N):
             ux[i] = vx[i] + ax[i] * dt/2.0
             uy[i] = vy[i] + ay[i] * dt/2.0
             uz[i] = vz[i] + az[i] * dt/2.0
@@ -93,7 +93,7 @@ def main():
             y[i] = y[i] - (int(y[i]/Ly)) * 2.0 * Ly      # Periodic Boundary Condition
             z[i] = z[i] - (int(z[i]/Lz)) * 2.0 * Lz      # Periodic Boundary Condition
 
-        for i in range(N):
+        for i in prange(N):
             ax[i] = 0.0
             ay[i] = 0.0
             az[i] = 0.0
@@ -110,7 +110,7 @@ def main():
                     ay[i] += fy
                     az[i] += fz
 
-        for i in range(N):
+        for i in prange(N):
             vx[i] = ux[i] + ax[i] * dt / 2.0
             vy[i] = uy[i] + ay[i] * dt / 2.0
             vz[i] = uz[i] + az[i] * dt / 2.0

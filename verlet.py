@@ -13,13 +13,13 @@ def main():
 
     N       = 100    # Number of particles
 
-    Vxmax   = 1.0 # Maximum velocity in X
-    Vymax   = 1.0 # Maximum velocity in Y
-    Vzmax   = 1.0 # Maximum velocity in Z
+    tmax    = 2.0   # Final time
+    dt      = 0.01   # time step size
+    Nt      = round(tmax/dt)  #number of time steps
 
-    tmax    = 50.0  # Final time
-    dt      = 0.01 # time step size
-    Nt      = round(tmax/dt) #number of time steps
+    Vxmax   = 1.0    # Maximum velocity in X
+    Vymax   = 1.0    # Maximum velocity in Y
+    Vzmax   = 1.0    # Maximum velocity in Z
 
     #========= Initialize ========
     random.seed(99999999)
@@ -80,7 +80,6 @@ def main():
     #========= Time Loop =========
 
     for t in range(len(time)):
-        KE = 0.0   # Reset KE
         for i in range(N):
             ux[i] = vx[i] + ax[i] * dt/2.0
             uy[i] = vy[i] + ay[i] * dt/2.0
@@ -113,8 +112,12 @@ def main():
             vx[i] = ux[i] + ax[i] * dt / 2.0
             vy[i] = uy[i] + ay[i] * dt / 2.0
             vz[i] = uz[i] + az[i] * dt / 2.0
-            KE += ( vx[i]*vx[i] + vy[i]*vy[i] + vz[i]*vz[i] ) / 2.0
-        #========== End of Time Loop ======
+
+        np.savetxt('data/time%04d'%t+'.txt', np.column_stack([x,y,z]))
+        print("Timestep = %d"%t)
+
+    #========== End of Time Loop ======
+
     return 0
 
 if __name__== "__main__":
