@@ -13,15 +13,15 @@ def main():
     Ly      = 10.0   # System length in Y
     Lz      = 10.0   # System length in Z
 
-    N       = 100    # Number of particles
-
-    Vxmax   = 1.0 # Maximum velocity in X
-    Vymax   = 1.0 # Maximum velocity in Y
-    Vzmax   = 1.0 # Maximum velocity in Z
+    N       = 500    # Number of particles
 
     tmax    = 50.0  # Final time
     dt      = 0.01 # time step size
     Nt      = round(tmax/dt) #number of time steps
+
+    Vxmax   = 1.0 # Maximum velocity in X
+    Vymax   = 1.0 # Maximum velocity in Y
+    Vzmax   = 1.0 # Maximum velocity in Z
 
     #========= Initialize ========
     random.seed(99999999)
