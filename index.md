@@ -1,6 +1,8 @@
 # [CoMP-Py 2021](https://comppy.iiita.ac.in/) (IIIT, Allahabad)
 ## Computational Methods in Physics using Python
 
+A guest lecture by Dr Rupak Mukherjee.
+
 ### [MD algorithm in Python!](verlet.md)
 
 ### [MD algorithm in Python with Numba!](verlet_numba.md)
