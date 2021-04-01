@@ -1,4 +1,4 @@
-# CoMP-Py 2021 (IIIT, Allahabad)
+# [CoMP-Py 2021](https://comppy.iiita.ac.in/) (IIIT, Allahabad)
 
 ## [A serial MD code in Python!](verlet.md)
 
