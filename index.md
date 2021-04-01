@@ -1,5 +1,4 @@
-# [CoMP-Py 2021](https://comppy.iiita.ac.in/) (IIIT, Allahabad)
-## Computational Methods in Physics using Python
+# Computational Methods in Physics using Python
 
 A guest lecture by Dr Rupak Mukherjee (July 2021).
 
