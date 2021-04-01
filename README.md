@@ -12,9 +12,9 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 <br/>
 
-## [MD algorithm in Python!](verlet.md)
+## [MD algorithm in Python!](verlet.py)
 
-## [MD algorithm in Python with Numba!](verlet_numba.md)
+## [MD algorithm in Python with Numba!](verlet_numba.py)
 
 <br/>
 
