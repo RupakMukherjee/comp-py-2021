@@ -4,7 +4,7 @@
 
 <br/>
 
-Below I post the codes that I have shown you live-developing during the lecture. 
+Below I post the codes that I have shown you *live-developing* during my lecture. 
 
 Feel free to download and modify them as-per your requirement. 
 
