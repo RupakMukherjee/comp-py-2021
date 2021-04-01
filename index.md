@@ -20,6 +20,8 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 ## [MD Animation with Matplotlib!](verlet_animate.md)
 
+## [Open Problems!](open-problems.md)
+
 <br/>
 
 # Advertisement
