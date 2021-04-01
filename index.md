@@ -1,7 +1,5 @@
 # [Computational Methods in Physics using Python](https://comppy.iiita.ac.in/)
 
-<br/>
-
 ## A guest lecture by [Dr Rupak Mukherjee](https://theory.pppl.gov/people/profile.php?pid=155&n=Rupak-Mukherjee) (July 2021).
 
 <br/>
@@ -22,8 +20,8 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 # Advertisement
 
-## [PPDyn](https://pypi.org/project/PPDyn/)
+# [PPDyn](https://pypi.org/project/PPDyn/)
 
-### A 3D Molecular Dynamics Python package with some cool visualization!
+### PPDyn: A 3D Molecular Dynamics Python package with some cool visualization!
 
 <br/><br/>
