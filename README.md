@@ -20,7 +20,7 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 ## [MD Animation with Matplotlib!](verlet_animate.py)
 
-## [Open Problems!](open-problems.md)
+## [Open Problems!](https://github.com/RupakMukherjee/comp-py-2021/blob/gh-pages/open-problems.md)
 
 <br/>
 
