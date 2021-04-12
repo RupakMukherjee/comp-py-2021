@@ -12,7 +12,7 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 <br/>
 
-## iPPD = interacting Point Particle Dynamics
+## iPPD = interacting (classical) Point Particle Dynamics
 
 <br/>
 
