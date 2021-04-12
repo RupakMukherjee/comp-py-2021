@@ -32,6 +32,6 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 # [PPDyn](https://pypi.org/project/PPDyn/)
 
-### PPDyn: A 3D interacting Point Particle Dynamics Python package with some cool visualization!
+### PPDyn: A 3D ... Particle Dynamics Python package with some cool visualization!
 
 <br/><br/>
