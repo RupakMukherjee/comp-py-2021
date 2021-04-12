@@ -12,13 +12,17 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 <br/>
 
-## [MD algorithm in Python!](verlet.md)
+## iPPD = interacting Point Particle Dynamics
 
-## [MD algorithm in Python using Numba!](verlet_numba.md)
+<br/>
 
-## [MD algorithm in Python using Numba on multiple processers!](verlet_numba_parallel.md)
+## [iPPD algorithm in Python!](verlet.md)
 
-## [MD Animation with Matplotlib!](verlet_animate.md)
+## [iPPD algorithm in Python using Numba!](verlet_numba.md)
+
+## [iPPD algorithm in Python using Numba on multiple processers!](verlet_numba_parallel.md)
+
+## [iPPD Animation with Matplotlib!](verlet_animate.md)
 
 ## [Open Problems!](open-problems.md)
 
@@ -28,6 +32,6 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 
 # [PPDyn](https://pypi.org/project/PPDyn/)
 
-### PPDyn: A 3D Molecular Dynamics Python package with some cool visualization!
+### PPDyn: A 3D ... Particle Dynamics Python package with some cool visualization!
 
 <br/><br/>
