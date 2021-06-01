@@ -5,7 +5,7 @@
 
 <br/><br/>
 
-Example: Click anywhere on the image below to start watching the movie!
+Click anywhere on the image below to start watching the movie!
 
 [![PPDyn Example](http://img.youtube.com/vi/qvQRUX-rSrQ/0.jpg)](https://www.youtube.com/embed/qvQRUX-rSrQ)
 
