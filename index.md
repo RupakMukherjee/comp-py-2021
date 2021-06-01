@@ -2,7 +2,14 @@
 
 ## Guest lectures by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (June 2021).
 
-<br/>
+
+<br/><br/>
+
+Example: Click anywhere on the image below to start watching the movie!
+
+[![PPDyn Example](http://img.youtube.com/vi/qvQRUX-rSrQ/0.jpg)](https://www.youtube.com/embed/qvQRUX-rSrQ)
+
+<br/><br/>
 
 Below I post the codes that I have shown you *live-developing* during my lecture. 
 
@@ -35,8 +42,3 @@ If you need any further assistance don't hesitate to [revert back to me](mailto:
 ### PPDyn: A 3D ... Particle Dynamics Python package with some cool visualization!
 
 <br/><br/>
-
-Example:
-
-[![PPDyn Example](http://img.youtube.com/vi/qvQRUX-rSrQ/0.jpg)](https://www.youtube.com/embed/qvQRUX-rSrQ)
-
