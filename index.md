@@ -11,7 +11,7 @@ Example: Click anywhere on the image below to start watching the movie!
 
 <br/><br/>
 
-Below I post the codes that I have shown you *live-developing* during my lecture. 
+Below I post the codes that I have shown you *live-developing* during my lecture to reproduce the above movie. 
 
 Feel free to download and modify them as-per your requirement. 
 
