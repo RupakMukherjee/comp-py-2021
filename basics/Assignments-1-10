@@ -1,0 +1,319 @@
+Write a program that uses a print statement to say 'hello world' as shown in 'Desired Output'.
+
+print "hello world"
+
+================================================================================================
+
+2.2 Write a program that uses raw_input to prompt a user for their name and then welcomes them. Note that raw_input will pop up a dialog box. Enter Sarah in the pop-up box when you are prompted so your output will match the desired output.
+
+name = raw_input("Enter your name")
+print "Hello", name
+
+Hello Sarah
+
+===========================================
+
+2.3 Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. Use 35 hours and a rate of 2.75 per hour to test the program (the pay should be 96.25). You should use raw_input to read a string and float() to convert the string to a number. Do not worry about error checking or bad user data.
+
+hrs = raw_input("Enter Hours:")
+rate = raw_input("Enter Rate per Hours: ")
+hrs = float(hrs)
+rate = float(rate)
+pay = hrs*rate
+print pay
+
+96.25
+
+===============================================================================================
+
+3.1 Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. Pay the hourly rate for the hours up to 40 and 1.5 times the hourly rate for all hours worked above 40 hours. Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75). You should use raw_input to read a string and float() to convert the string to a number. Do not worry about error checking the user input - assume the user types numbers properly. 
+
+hrs = raw_input("Enter Hours:")
+h = float(hrs)
+rate = raw_input("Enter Rate:")
+r = float(rate)
+hh = 40
+rr = r*1.5
+if h > hh:
+    p = hh*r + rr*(h-hh)
+    print p
+else:
+    p = h*r
+    print p
+
+498.75
+
+============================================
+
+3.3 Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table:
+Score Grade
+>= 0.9 A
+>= 0.8 B
+>= 0.7 C
+>= 0.6 D
+< 0.6 F
+If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85. 
+
+score = raw_input("Enter the score between 0.0 and 0.1")
+isc = float(score)
+if   isc <  0.0: print "Enter Proper Number"
+elif isc >  1.0: print 'Enter Proper Number'
+elif isc >= 0.9: print "A"
+elif isc >= 0.8: print 'B'
+elif isc >= 0.7: print 'C'
+elif isc >= 0.6: print "D"
+elif isc <  0.6: print 'F'
+
+B
+
+====================================================================================================
+
+4.6 Write a program to prompt the user for hours and rate per hour using raw_input to compute gross pay. Award time-and-a-half for the hourly rate for all hours worked above 40 hours. Put the logic to do the computation of time-and-a-half in a function called computepay() and use the function to do the computation. The function should return a value. Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75). You should use raw_input to read a string and float() to convert the string to a number. Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly.
+
+h = raw_input ("Enter Hours")
+h = float (h)
+r = raw_input ("Enter Rate")
+r = float (r)
+
+def computepay(h,r):
+    if (h-40.0)>0:
+     p = 40.0*10.50 + (h-40.0)*1.5*10.50
+     return p
+    else:
+     p = 40.0*10.50
+     return p
+        
+print computepay(h,r)
+
+498.75
+
+==================================================================================================
+
+5.2 Write a program that repeatedly prompts a user for integer numbers until the user enters 'done'. Once 'done' is entered, print out the largest and smallest of the numbers. If the user enters anything other than a valid number catch it with a try/except and put out an appropriate message and ignore the number. Enter the numbers from the book for problem 5.1 and Match the desired output as shown. 
+
+largest = None
+smallest = None
+while True:
+    num = raw_input("Enter an integer number: ")
+    if num == "done" : break
+    try:
+        num = int(num)
+        if smallest is None:
+            smallest = num
+        elif  num < smallest:
+            smallest = num
+               
+        if largest is None:
+            largest = num
+        elif num > largest:
+            largest = num
+       
+    except: print "Invalid input"
+print "Maximum is", largest
+print "Minimum is", smallest
+
+Invalid input
+Maximum is 7
+Minimum is 4
+
+==================================================================================================
+
+6.5 Write code using find() and string slicing (see section 6.10) to extract the number at the end of the line below. Convert the extracted value to a floating point number and print it out.
+
+text = "X-DSPAM-Confidence:    0.8475";
+st1 = text.find("0")
+st2 = text.find("5")
+st = text[st1:st2+1]
+st = float(st)
+print st
+
+0.8475
+
+===================================================================================================
+
+ 7.1 Write a program that prompts for a file name, then opens that file and reads through the file, and print the contents of the file in upper case. Use the file words.txt to produce the output below.
+
+You can download the sample data at http://www.pythonlearn.com/code/words.txt
+
+# Use words.txt as the file name
+fname = raw_input("Enter file name: ")
+
+fh = open(fname)
+for line in fh:
+    line = line.rstrip()
+    line = line.upper()
+    print line
+
+WRITING PROGRAMS OR PROGRAMMING IS A VERY CREATIVE
+AND REWARDING ACTIVITY  YOU CAN WRITE PROGRAMS FOR
+MANY REASONS RANGING FROM MAKING YOUR LIVING TO SOLVING
+A DIFFICULT DATA ANALYSIS PROBLEM TO HAVING FUN TO HELPING
+SOMEONE ELSE SOLVE A PROBLEM  THIS BOOK ASSUMES THAT
+{\EM EVERYONE} NEEDS TO KNOW HOW TO PROGRAM AND THAT ONCE
+YOU KNOW HOW TO PROGRAM, YOU WILL FIGURE OUT WHAT YOU WANT
+TO DO WITH YOUR NEWFOUND SKILLS
+
+WE ARE SURROUNDED IN OUR DAILY LIVES WITH COMPUTERS RANGING
+FROM LAPTOPS TO CELL PHONES  WE CAN THINK OF THESE COMPUTERS
+AS OUR PERSONAL ASSISTANTS WHO CAN TAKE CARE OF MANY THINGS
+ON OUR BEHALF  THE HARDWARE IN OUR CURRENT-DAY COMPUTERS
+IS ESSENTIALLY BUILT TO CONTINUOUSLY AS US THE QUESTION
+WHAT WOULD YOU LIKE ME TO DO NEXT
+
+OUR COMPUTERS ARE FAST AND HAVE VASTS AMOUNTS OF MEMORY AND
+COULD BE VERY HELPFUL TO US IF WE ONLY KNEW THE LANGUAGE TO
+SPEAK TO EXPLAIN TO THE COMPUTER WHAT WE WOULD LIKE IT TO
+DO NEXT IF WE KNEW THIS LANGUAGE WE COULD TELL THE
+COMPUTER TO DO TASKS ON OUR BEHALF THAT WERE REPTITIVE
+INTERESTINGLY, THE KINDS OF THINGS COMPUTERS CAN DO BEST
+ARE OFTEN THE KINDS OF THINGS THAT WE HUMANS FIND BORING
+AND MIND-NUMBING
+
+=================================================
+
+ 7.2 Write a program that prompts for a file name, then opens that file and reads through the file, looking for lines of the form:
+
+X-DSPAM-Confidence:    0.8475
+
+Count these lines and extract the floating point values from each of the lines and compute the average of those values and produce an output as shown below.
+
+You can download the sample data at http://www.pythonlearn.com/code/mbox-short.txt when you are testing below enter mbox-short.txt as the file name.
+
+# Use the file name mbox-short.txt as the file name
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+count = 0
+linen = 0
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:") : continue
+    count = count + 1
+    line = line[20:]
+    linen = linen + float(line)
+#    print linen, count
+print "Average spam confidence:", linen/count
+
+Average spam confidence: 0.750718518519
+
+=====================================================================================================
+
+ 8.4 Open the file romeo.txt and read it line by line. For each line, split the line into a list of words using the split() function. The program should build a list of words. For each word on each line check to see if the word is already in the list and if not append it to the list. When the program completes, sort and print the resulting words in alphabetical order.
+
+You can download the sample data at http://www.pythonlearn.com/code/romeo.txt
+
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+lst = list()
+for line in fh:
+ word =line.split()
+ for i in word:
+#  print i
+  if i not in lst: lst.append(i)
+lst.sort()
+print lst 
+
+['Arise', 'But', 'It', 'Juliet', 'Who', 'already', 'and', 'breaks', 'east', 'envious', 'fair', 'grief', 'is', 'kill', 'light', 'moon', 'pale', 'sick', 'soft', 'sun', 'the', 'through', 'what', 'window', 'with', 'yonder']
+
+========================================================================================================
+
+ 8.5 Open the file mbox-short.txt and read it line by line. When you find a line that starts with 'From ' like the following line:
+
+From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+
+You will parse the From line using split() and print out the second word in the line (i.e. the entire address of the person who sent the message). Then print out a count at the end.
+
+Hint: make sure not to include the lines that start with 'From:'.
+
+You can download the sample data at http://www.pythonlearn.com/code/mbox-short.txt
+
+fname = raw_input("Enter file name: ")
+if len(fname) < 1 : fname = "mbox-short.txt"
+
+fh = open(fname)
+count = 0
+for line in fh:
+ line = line.rstrip()
+ if not line.startswith('From '): continue
+ words = line.split()
+ count = count +1
+ print words[1]
+print "There were", count, "lines in the file with From as the first word"
+
+stephen.marquard@uct.ac.za
+louis@media.berkeley.edu
+zqian@umich.edu
+rjlowe@iupui.edu
+zqian@umich.edu
+rjlowe@iupui.edu
+cwen@iupui.edu
+cwen@iupui.edu
+gsilver@umich.edu
+gsilver@umich.edu
+zqian@umich.edu
+gsilver@umich.edu
+wagnermr@iupui.edu
+zqian@umich.edu
+antranig@caret.cam.ac.uk
+gopal.ramasammycook@gmail.com
+david.horwitz@uct.ac.za
+david.horwitz@uct.ac.za
+david.horwitz@uct.ac.za
+david.horwitz@uct.ac.za
+stephen.marquard@uct.ac.za
+louis@media.berkeley.edu
+louis@media.berkeley.edu
+ray@media.berkeley.edu
+cwen@iupui.edu
+cwen@iupui.edu
+cwen@iupui.edu
+There were 27 lines in the file with From as the first word
+
+================================================================================================================
+
+
+9.4 Write a program to read through the mbox-short.txt and figure out who has the sent the greatest number of mail messages. The program looks for 'From ' lines and takes the second word of those lines as the person who sent the mail. The program creates a Python dictionary that maps the sender's mail address to a count of the number of times they appear in the file. After the dictionary is produced, the program reads through the dictionary using a maximum loop to find the most prolific committer.
+
+name = raw_input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+fh = open(name,'r')
+bigcount = None
+bigword = None
+counts = dict()
+for line in fh:
+ line = line.rstrip()
+ if not line.startswith('From '): continue
+ words = line.split()
+ word = words[1]
+ counts[word] = counts.get(word,0)+1
+ for word,count in counts.items():
+  if bigcount is None or count > bigcount:
+   bigword = word
+   bigcount = count
+print bigword, bigcount
+
+cwen@iupui.edu 5
+
+===================================================================================================================
+
+
+10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the 'From ' line by finding the time and then splitting the string a second time using a colon.
+
+From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+
+Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below. Note that the autograder does not have support for the sorted() function.
+
+   UNSOLVED
+
+04 3
+06 1
+07 1
+09 2
+10 3
+11 6
+14 1
+15 2
+16 4
+17 2
+18 1
+19 1
+
+
