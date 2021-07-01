@@ -1,6 +1,6 @@
 # [Computational Methods in Physics using Python](https://comppy.iiita.ac.in/)
 
-## Guest lectures by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (July 2021).
+## Guest lecture by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (July 3, 2021).
 
 <br/>
 
