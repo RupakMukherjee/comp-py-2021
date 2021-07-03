@@ -2,7 +2,7 @@
 
 ## Guest lecture by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (Saturday, July 3, 2021).
 
-## [Lecture Slides](https://raw.githubusercontent.com/RupakMukherjee/comp-py-2021/main/Comp-Py-IIITA-2021-Rupak-iPPD-L1.pdf)
+## Lecture [Video](https://www.youtube.com/channel/UCEdsOF8Y3bf5vclMQ3SgbVQ)/[PDF](https://raw.githubusercontent.com/RupakMukherjee/comp-py-2021/main/Comp-Py-IIITA-2021-Rupak-iPPD-L1.pdf)/[Keynote](https://drive.google.com/file/d/1PN09trZXTu5oeimCWP3t0nvw8LGxW1DQ/view?usp=sharing)
 
 <br/><br/>
 
