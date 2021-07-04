@@ -1,10 +1,18 @@
 # [Computational Methods in Physics using Python](https://comppy.iiita.ac.in/)
 
-## Guest lecture by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (July 3, 2021).
+## Guest lecture by [Dr Rupak Mukherjee](https://github.com/RupakMukherjee) (Saturday, July 3, 2021).
 
-<br/>
+## Lecture [Video](https://www.youtube.com/watch?v=sar9N0EOTYw)/[PDF](https://raw.githubusercontent.com/RupakMukherjee/comp-py-2021/main/Comp-Py-IIITA-2021-Rupak-iPPD-L1.pdf)/[Keynote](https://drive.google.com/file/d/1PN09trZXTu5oeimCWP3t0nvw8LGxW1DQ/view?usp=sharing)
 
-Below I post the codes that I have shown you *live-developing* during my lecture. 
+<br/><br/>
+
+Click anywhere on the image below to start watching the movie!
+
+[![PPDyn Example](http://img.youtube.com/vi/qvQRUX-rSrQ/0.jpg)](https://www.youtube.com/embed/qvQRUX-rSrQ)
+
+<br/><br/>
+
+Below I post the codes that I have shown you *live-developing* during my lecture to reproduce the above movie. 
 
 Feel free to download and modify them as-per your requirement. 
 
